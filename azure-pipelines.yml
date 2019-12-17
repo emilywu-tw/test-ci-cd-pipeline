@@ -11,5 +11,3 @@ pool:
 
 steps:
 - pwsh: ./HelloWorld.ps1
-- publish: $(System.DefaultWorkingDirectory)/bin/WebApp
-  artifact: WebApp
