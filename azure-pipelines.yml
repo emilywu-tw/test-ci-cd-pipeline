@@ -11,3 +11,7 @@ pool:
 
 steps:
 - pwsh: ./HelloWorld.ps1
+- task: PublishPipelineArtifact@1
+  inputs:
+    targetPath: '$(Pipeline.Workspace)' 
+    artifactName: # 'drop'
