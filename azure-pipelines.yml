@@ -4,9 +4,9 @@ trigger:
 pool:
   vmImage: 'ubuntu-latest'
 
-language: java
-jdk:
-- oraclejdk7
-script:
-- gradle build
-- gradle test
+steps:
+- pwsh: ./HelloWorld.ps1
+- task: PublishPipelineArtifact@1
+  inputs:
+    targetPath: '$(Pipeline.Workspace)'
+    artifactName: 'drop'
