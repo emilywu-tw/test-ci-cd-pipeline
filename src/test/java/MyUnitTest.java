@@ -9,6 +9,6 @@ public class MyUnitTest {
 
         String result = myUnit.concatenate("one", "two");
 
-        assertEquals("onetwo", result);
+        assertEquals("onetwothree", result); // failing on purpose to test gradle on pipeline
     }
 }
